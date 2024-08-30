@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page para Telegram</title>
+    <!-- Incluye Bootstrap CSS desde su CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluye Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('./src/background.png'); /* Imagen de fondo */
+            background-size: cover; /* Asegura que la imagen cubra toda el área */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.453); /* Fondo blanco semi-transparente */
+            padding: 10px;
+            border-radius: 10px; /* Bordes redondeados */
+        }
+        .qr-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        .btn-custom i {
+            margin-right: 8px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Título -->
+        <h1 class="my-4">TMO-BOT</h1>
+        <!-- Imagen QR -->
+        <img src="./src/qr-sin-f.png" alt="QR Code" class="qr-img">
+        <!-- Botón para redirigir al BOT de Telegram con ícono -->
+        <a href="https://t.me/prueMangaNotiBot" class="btn btn-custom" target="_blank">
+            <i class="fab fa-telegram-plane"></i> Ir al BOT
+        </a>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 TMO-BOT. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Incluye Bootstrap JS y dependencias desde su CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Incluye Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
